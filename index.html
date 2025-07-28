@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF</title>
+    <meta name="description" content="Portfolio of a passionate software developer">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">PF</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#projects" class="nav-link-mobile">Projects</a>
+                <a href="#experience" class="nav-link-mobile">Experience</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-intro">
+                        <img src="https://via.placeholder.com/200x200/6366f1/ffffff?text=PF" alt="Alex Johnson" class="profile-img">
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="text-primary">Alex Johnson</span>
+                        </h1>
+                        <p class="hero-subtitle">Aspiring Full-Stack Developer</p>
+                        <p class="hero-description">
+                            Recent Computer Science graduate passionate about creating innovative web solutions. Eager to contribute
+                            fresh ideas and modern development practices to your team.
+                        </p>
+                    </div>
+
+                    <!-- Demo Images Section -->
+                    <div class="demo-section">
+                        <h3 class="demo-title">My Work in Action</h3>
+                        <div class="demo-grid">
+                            <div class="demo-item">
+                                <div class="demo-image">
+                                    <img src="https://via.placeholder.com/400x300/6366f1/ffffff?text=Task+Manager" alt="Task Management App">
+                                </div>
+                                <p class="demo-label">Task Management App</p>
+                            </div>
+                            <div class="demo-item">
+                                <div class="demo-image">
+                                    <img src="https://via.placeholder.com/400x300/8b5cf6/ffffff?text=E-commerce" alt="E-commerce Demo">
+                                </div>
+                                <p class="demo-label">E-commerce Platform</p>
+                            </div>
+                            <div class="demo-item">
+                                <div class="demo-image">
+                                    <img src="https://via.placeholder.com/400x300/06b6d4/ffffff?text=Weather+App" alt="Weather App Demo">
+                                </div>
+                                <p class="demo-label">Weather Mobile App</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-download"></i>
+                            Download Resume
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:alex@example.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/400x400/6366f1/ffffff?text=Developer" alt="Developer workspace">
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            I'm a recent Computer Science graduate with a passion for full-stack development. During my studies, I've
+                            built several projects that showcase my ability to learn quickly and apply modern technologies to solve
+                            real-world problems.
+                        </p>
+                        <p>
+                            I'm particularly interested in creating user-friendly applications that make a positive impact. I enjoy
+                            collaborating with others, learning from experienced developers, and staying up-to-date with the latest
+                            industry trends and best practices.
+                        </p>
+                        <div class="about-details">
+                            <div class="detail-item">
+                                <h3>Education</h3>
+                                <p>B.S. Computer Science</p>
+                                <p class="detail-sub">GPA: 3.8/4.0</p>
+                            </div>
+                            <div class="detail-item">
+                                <h3>Interests</h3>
+                                <p>Web Development, Open Source, UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 class="skill-title">Frontend</h3>
+                        <p class="skill-description">Building responsive and interactive user interfaces</p>
+                        <div class="skill-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Sass</span>
+                            <span class="tag">Vue.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">Backend</h3>
+                        <p class="skill-description">Server-side development and API design</p>
+                        <div class="skill-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Django</span>
+                            <span class="tag">REST APIs</span>
+                            <span class="tag">GraphQL</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">Database</h3>
+                        <p class="skill-description">Data storage and management solutions</p>
+                        <div class="skill-tags">
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">Prisma</span>
+                            <span class="tag">Mongoose</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3 class="skill-title">DevOps & Tools</h3>
+                        <p class="skill-description">Development workflow and deployment</p>
+                        <div class="skill-tags">
+                            <span class="tag">Git</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Vercel</span>
+                            <span class="tag">GitHub Actions</span>
+                            <span class="tag">Jest</span>
+                            <span class="tag">Cypress</span>
+                            <span class="tag">Webpack</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">My Projects</h2>
+                <p class="section-description">
+                    Here are some projects I've worked on during my studies and personal time. Each project helped me learn new
+                    technologies and improve my development skills.
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/6366f1/ffffff?text=Task+Manager" alt="Task Management Web App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Task Management Web App</h3>
+                                <span class="project-type">Academic Project</span>
+                            </div>
+                            <p class="project-description">
+                                A responsive task management application built as a final year project. Features include user authentication, real-time updates, and team collaboration.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/8b5cf6/ffffff?text=E-commerce" alt="E-Commerce Store Frontend">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">E-Commerce Store Frontend</h3>
+                                <span class="project-type">Internship Project</span>
+                            </div>
+                            <p class="project-description">
+                                A modern e-commerce frontend built during an internship. Includes product catalog, shopping cart, and responsive design with smooth animations.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Framer Motion</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/06b6d4/ffffff?text=Weather+App" alt="Weather Forecast App">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Weather Forecast App</h3>
+                                <span class="project-type">Personal Project</span>
+                            </div>
+                            <p class="project-description">
+                                A mobile-first weather application that provides detailed forecasts and weather alerts. Built to learn API integration and responsive design.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Weather API</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/10b981/ffffff?text=Grade+Tracker" alt="Student Grade Tracker">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Student Grade Tracker</h3>
+                                <span class="project-type">Personal Project</span>
+                            </div>
+                            <p class="project-description">
+                                A web application to help students track their grades and calculate GPA. Features data visualization and export functionality.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Chart.js</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/f59e0b/ffffff?text=Recipe+Platform" alt="Recipe Sharing Platform">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Recipe Sharing Platform</h3>
+                                <span class="project-type">Group Project</span>
+                            </div>
+                            <p class="project-description">
+                                A social platform for sharing and discovering recipes. Includes user profiles, recipe ratings, and search functionality.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Django</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/500x300/ef4444/ffffff?text=Portfolio" alt="Portfolio Website">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Portfolio Website</h3>
+                                <span class="project-type">Personal Project</span>
+                            </div>
+                            <p class="project-description">
+                                This responsive portfolio website showcasing my projects and skills. Built with modern web technologies and best practices.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Framer Motion</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-sm btn-primary">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="btn btn-sm btn-outline">
+                                    <i class="fab fa-github"></i>
+                                    Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Education & Experience</h2>
+                <p class="section-description">
+                    My educational background and early professional experiences that have shaped my development journey.
+                </p>
+                <div class="experience-list">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <i class="fas fa-briefcase experience-icon"></i>
+                                <div>
+                                    <h3 class="experience-title">Frontend Development Intern</h3>
+                                    <p class="experience-company">TechStart Solutions</p>
+                                </div>
+                            </div>
+                            <div class="experience-badges">
+                                <span class="badge">Summer 2024</span>
+                                <span class="badge badge-secondary">Internship</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Developed responsive web components using React and TypeScript. Collaborated with senior developers to implement new features and optimize existing code. Gained hands-on experience with modern development workflows.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Figma</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <i class="fas fa-graduation-cap experience-icon"></i>
+                                <div>
+                                    <h3 class="experience-title">Bachelor of Science in Computer Science</h3>
+                                    <p class="experience-company">University of Technology</p>
+                                </div>
+                            </div>
+                            <div class="experience-badges">
+                                <span class="badge">2020 - 2024</span>
+                                <span class="badge badge-secondary">Education</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Graduated with honors (GPA: 3.8/4.0). Relevant coursework included Data Structures, Algorithms, Database Systems, Web Development, and Software Engineering. Active member of the Computer Science Club.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">C++</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <i class="fas fa-award experience-icon"></i>
+                                <div>
+                                    <h3 class="experience-title">Web Development Bootcamp</h3>
+                                    <p class="experience-company">CodeAcademy Online</p>
+                                </div>
+                            </div>
+                            <div class="experience-badges">
+                                <span class="badge">2023</span>
+                                <span class="badge badge-secondary">Certification</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Completed intensive 12-week full-stack web development bootcamp. Built multiple projects using modern web technologies and learned industry best practices for development and deployment.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <div class="experience-info">
+                                <i class="fas fa-briefcase experience-icon"></i>
+                                <div>
+                                    <h3 class="experience-title">Freelance Web Developer</h3>
+                                    <p class="experience-company">Self-Employed</p>
+                                </div>
+                            </div>
+                            <div class="experience-badges">
+                                <span class="badge">2023 - Present</span>
+                                <span class="badge badge-secondary">Freelance</span>
+                            </div>
+                        </div>
+                        <p class="experience-description">
+                            Created websites for local businesses and personal clients. Managed projects from initial consultation to deployment, gaining experience in client communication and project management.
+                        </p>
+                        <div class="experience-tags">
+                            <span class="tag">WordPress</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Connect!</h2>
+                <p class="section-description">
+                    I'm actively looking for entry-level opportunities and would love to discuss how I can contribute to your
+                    team. Feel free to reach out for collaborations, questions, or just to say hello!
+                </p>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Ready to Start My Career</h3>
+                        <p class="contact-text">
+                            As a recent graduate, I'm excited to bring fresh perspectives, modern technical skills, and enthusiasm to
+                            a dynamic development team. I'm open to full-time positions, internships, and freelance opportunities.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope contact-icon"></i>
+                                <span>alex.johnson@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <span>+1 (555) 123-4567</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt contact-icon"></i>
+                                <span>San Francisco, CA (Open to relocation)</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-calendar contact-icon"></i>
+                                <span>Available immediately</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-wrapper">
+                        <div class="contact-form-card">
+                            <h3 class="form-title">Send a Message</h3>
+                            <p class="form-description">
+                                Whether you have a job opportunity, want to collaborate on a project, or just want to connect, I'd love
+                                to hear from you!
+                            </p>
+                            <form class="contact-form" id="contactForm">
+                                <div class="form-group">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                </div>
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Your Message (Tell me about the opportunity or how we can work together!)" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 PF. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:alex@example.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
